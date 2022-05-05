@@ -1,10 +1,18 @@
-import { Container, Icon, Typography } from '@material-ui/core';
+import { Container, Icon, makeStyles, Typography } from '@material-ui/core';
+import { useState } from 'react';
 
+
+const usesState = makeStyles(theme => ({
+    gridItem: {
+        padding: 20
+    }
+}))
 
 export default function GridItem(props) {
+    const { gridItem } = useState()
 
     return(
-        <Container>
+        <Container align='left' className={gridItem}>
             <Icon>
                 {props.icon}
             </Icon>
