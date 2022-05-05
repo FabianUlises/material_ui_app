@@ -1,5 +1,5 @@
 import { Container, Grid, makeStyles, Typography } from "@material-ui/core";
-import { ThumbUp } from "@material-ui/icons";
+import { Build, ThumbUp } from "@material-ui/icons";
 
 
 
@@ -23,11 +23,32 @@ export default function ProductInfo() {
                 What you'll get
             </Typography>
             <Grid Container>
-                <Grid item>
+                <Grid item lg={4} md={12} sm={12} xs={12}>
                     <GridItem
                         title='courses'
                         desc='read more about the courses available'
                         icon={<ThumbUp />}
+                    />
+                </Grid>
+                <Grid item lg={4} md={12} sm={12} xs={12}>
+                    <GridItem
+                        title='Build projects'
+                        desc='Project-hased curriculum to build your portfolio'
+                        icon={<Build />}
+                    />
+                </Grid>
+                <Grid item lg={4} md={12} sm={12} xs={12}>
+                    <GridItem
+                        title='courses'
+                        desc='read more about the courses available'
+                        icon={<ThumbUp />}
+                    />
+                </Grid>                
+                <Grid item lg={4} md={12} sm={12} xs={12}>
+                    <GridItem
+                        title='Build projects'
+                        desc='Project-hased curriculum to build your portfolio'
+                        icon={<Build />}
                     />
                 </Grid>
             </Grid>
