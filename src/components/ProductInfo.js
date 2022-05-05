@@ -1,4 +1,11 @@
 import { Container, Grid, Typography } from "@material-ui/core";
+import { ThumbUp } from "@material-ui/icons";
+
+
+
+
+
+
 
 import GridItem from './GridItem';
 
@@ -12,6 +19,8 @@ export default function ProductInfo() {
                 <Grid item>
                     <GridItem
                         title='courses'
+                        desc='read more about the courses available'
+                        icon={<ThumbUp />}
                     />
                 </Grid>
             </Grid>
