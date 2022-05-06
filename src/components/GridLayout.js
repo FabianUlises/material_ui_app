@@ -4,7 +4,7 @@ import { Grid } from '@material-ui/core';
 import MainGridItem from './MainGridItem';
 import ProductInfo from './ProductInfo';
 import Pricing from './Pricing';
-import Footer from '/Footer'
+import Footer from './Footer'
 
 export default function GridLayout() {
     return (

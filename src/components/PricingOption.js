@@ -1,4 +1,4 @@
-import { Typography } from "@material-ui/core";
+import { Typography, Card } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export default function PricingOption() {
+export default function PricingOption(props) {
      const { pricingCard } = useStyles();
 
 
